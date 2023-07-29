@@ -4,7 +4,7 @@
     --gray: #eeeeee;
     --dark: #333333;
     --padding: 1rem;
-    --padding: 2rem;
+    --padding2: 2rem;
     --mainFont: 'PT Serif', serif;
 }
 
@@ -59,7 +59,21 @@ h3 {
     margin: 0 auto;
     width: 90%;
 }
-
+.button{
+    background-color: var(--primary);
+    padding: var(--padding);
+    color: var(--light);
+    border: 1px solid var(--primary);
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.button:hover{
+    background-color: var(--light);
+    color: var(--primary);
+    cursor: pointer;
+}
 .header {
     padding: var(--padding);
     background-color: var(--dark);
@@ -124,7 +138,7 @@ h3 {
 }
 .search-form input[type="text"],
 .search-form select{
-    padding: 1rem;
+    padding: var(--padding);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
